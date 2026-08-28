@@ -1,0 +1,2014 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 6 486 527 790
+%%Title: kx2
+%%CreationDate: Fri Nov  4 16:58:51 2016
+%%Creator: Tgif-4.2.5 written by William Chia-Wei Cheng (bill.cheng@acm.org)
+%%ProducedBy: (unknown)
+%%Pages: 1
+%%DocumentFonts: (atend)
+%%EndComments
+%%BeginProlog
+
+/tgifdict 69 dict def
+tgifdict begin
+
+/tgifellipsedict 6 dict def
+tgifellipsedict /mtrx matrix put
+
+/TGEL % tgifellipse
+ { tgifellipsedict begin
+      /yrad exch def
+      /xrad exch def
+      /y exch def
+      /x exch def
+      /savematrix mtrx currentmatrix def
+      x y translate
+      xrad yrad scale
+      0 0 1 0 360 arc
+      savematrix setmatrix
+   end
+ } def
+
+/tgifarrowtipdict 8 dict def
+tgifarrowtipdict /mtrx matrix put
+
+/TGAT % tgifarrowtip
+ { tgifarrowtipdict begin
+      /dy exch def
+      /dx exch def
+      /h exch def
+      /w exch def
+      /y exch def
+      /x exch def
+      /savematrix mtrx currentmatrix def
+      x y translate
+      dy dx atan rotate
+      0 0 moveto
+      w neg h lineto
+      w neg h neg lineto
+      savematrix setmatrix
+   end
+ } def
+
+/tgifxpmdict 4 dict def
+/tgifbwpicstr 1 string def
+/tgifcolorpicstr 3 string def
+
+/tgifsetpixels { tgifxpmdict begin /pixels exch def end } def
+
+/tgifsetpix { tgifxpmdict begin pixels 3 1 roll putinterval end } def
+
+/tgifsetppmtruetranspix
+ { tgifxpmdict begin
+      3 array /transpixels exch def
+      transpixels 2 3 -1 roll put
+      transpixels 1 3 -1 roll put
+      transpixels 0 3 -1 roll put
+      /curpix 3 array def
+   end
+ } def
+
+/tgifcolorspot
+ { tgifxpmdict begin
+      /index exch def
+      pixels index 3 mul 3 getinterval aload pop
+      255 mul cvi tgifcolorpicstr 2 3 -1 roll put
+      255 mul cvi tgifcolorpicstr 1 3 -1 roll put
+      255 mul cvi tgifcolorpicstr 0 3 -1 roll put
+      tgifcolorpicstr
+   end
+ } def
+
+/tgifcolordict 4 dict def
+
+/colorimage where
+ { pop }
+ { /colorimage
+   { tgifcolordict begin
+        pop pop pop pop pop
+        /ih exch def
+        /iw exch def
+        /x 0 def
+        /y 0 def
+        1 1 ih
+         { pop 1 1 iw
+            { pop
+              3 { currentfile tgifbwpicstr readhexstring pop 0 get 255 div } repeat setrgbcolor
+              newpath x y moveto 1 0 rlineto 0 1 rlineto -1 0 rlineto
+              closepath fill
+              /x x 1 add def
+            } for
+           /y y 1 add def
+           /x 0 def
+         } for
+     end
+   } def
+ } ifelse
+
+/tgiftranscolorspot
+ { tgifxpmdict begin
+      /index exch def
+      pixels index 3 mul 3 getinterval aload pop
+      dup 0 lt { pop pop pop false } { setrgbcolor true } ifelse
+   end
+ } def
+
+/tgiftranscolorimage
+ { tgifcolordict begin
+      pop pop pop pop pop
+      /ih exch def
+      /iw exch def
+      /x 0 def
+      /y 0 def
+      1 1 ih
+       { pop 1 1 iw
+          { pop currentfile
+            tgifbwpicstr readhexstring pop 0 get tgiftranscolorspot
+            { newpath x y moveto 1 0 rlineto 0 1 rlineto -1 0 rlineto
+              closepath fill
+            }
+            if
+            /x x 1 add def
+          } for
+         /y y 1 add def
+         /x 0 def
+       } for
+   end
+ } def
+
+/tgiftransppmtruecolorspot
+ { tgifxpmdict begin
+      /count 0 def
+      curpix 2 3 -1 roll put
+      curpix 1 3 -1 roll put
+      curpix 0 3 -1 roll put
+      curpix 0 get transpixels 0 get ne { /count count 1 add def } if
+      curpix 1 get transpixels 1 get ne { /count count 1 add def } if
+      curpix 2 get transpixels 2 get ne { /count count 1 add def } if
+      count 0 eq { false } { curpix 0 get 255 div curpix 1 get 255 div curpix 2 get 255 div setrgbcolor true } ifelse
+   end
+ } def
+
+/tgiftransppmtruecolorimage
+ { tgifcolordict begin
+      pop pop pop pop pop
+      /ih exch def
+      /iw exch def
+      /x 0 def
+      /y 0 def
+      1 1 ih
+       { pop 1 1 iw
+          { pop
+            3 { currentfile tgifbwpicstr readhexstring pop 0 get } repeat tgiftransppmtruecolorspot
+            { newpath x y moveto 1 0 rlineto 0 1 rlineto -1 0 rlineto
+              closepath fill
+            }
+            if
+            /x x 1 add def
+          } for
+         /y y 1 add def
+         /x 0 def
+       } for
+   end
+ } def
+
+/TGMAX
+ { exch dup 3 1 roll exch dup 3 1 roll gt { pop } { exch pop } ifelse
+ } def
+/TGMIN
+ { exch dup 3 1 roll exch dup 3 1 roll lt { pop } { exch pop } ifelse
+ } def
+/TGSW { stringwidth pop } def
+/tgifstrw 0 def
+
+/bd { bind def } bind def
+
+/GS { gsave } bd
+/GR { grestore } bd
+/NP { newpath } bd
+/CP { closepath } bd
+/CHP { charpath } bd
+/CT { curveto } bd
+/L { lineto } bd
+/RL { rlineto } bd
+/M { moveto } bd
+/RM { rmoveto } bd
+/S { stroke } bd
+/F { fill } bd
+/TR { translate } bd
+/RO { rotate } bd
+/SC { scale } bd
+/MU { mul } bd
+/DI { div } bd
+/DU { dup } bd
+/NE { neg } bd
+/AD { add } bd
+/SU { sub } bd
+/PO { pop } bd
+/EX { exch } bd
+/CO { concat } bd
+/CL { clip } bd
+/EC { eoclip } bd
+/EF { eofill } bd
+/IM { image } bd
+/IMM { imagemask } bd
+/ARY { array } bd
+/SG { setgray } bd
+/RG { setrgbcolor } bd
+/SD { setdash } bd
+/W { setlinewidth } bd
+/SM { setmiterlimit } bd
+/SLC { setlinecap } bd
+/SLJ { setlinejoin } bd
+/SH { show } bd
+/FF { findfont } bd
+/MS { makefont setfont } bd
+/AR { arcto 4 {pop} repeat } bd
+/CURP { currentpoint } bd
+/FLAT { flattenpath strokepath clip newpath } bd
+/TGSM { tgiforigctm setmatrix } def
+/TGRM { savematrix setmatrix } def
+
+end
+
+%%EndProlog
+%%Page: 1 1
+
+%%PageBoundingBox: 6 486 527 790
+tgifdict begin
+/tgifsavedpage save def
+
+1 SM
+1 W
+
+0 SG
+
+72 0 MU 72 11 MU TR
+72 128 DI 100.000 MU 100 DI DU NE SC
+
+GS
+
+/tgiforigctm matrix currentmatrix def
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 15 175 M 105 175 L 105 225 L 15 225 L CP
+      2 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      125 180 M
+      GS
+            0 SG
+            /Courier FF [10 0 0 -10 0 0] MS
+            ( ) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      125 140 M
+      GS
+            0 SG
+            /Times-Roman FF [14 0 0 -14 0 0] MS
+            (MIC) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      125 320 M
+      GS
+            0 SG
+            /Courier FF [14 0 0 -14 0 0] MS
+            (KEY) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 120 125 M 160 125 L 160 145 L 120 145 L CP
+      2 W
+      S
+   GR
+GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 120 305 M 160 305 L 160 325 L 120 325 L CP
+      2 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   GS
+      NP 165 200 5 5 TGEL
+      2 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   GS
+      NP 135 200 5 5 TGEL
+      2 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   GS
+      NP 140 180 5 5 TGEL
+      2 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   GS
+      NP 135 250 5 5 TGEL
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      140 175 M
+      140 145 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      160 200 M
+      145 185 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      325 195 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (DSP MOD) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (ADSP21479) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 320 175 M 410 175 L 410 225 L 320 225 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      410 200 M
+      445 200 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      450 195 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (DAC) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (PCM1773) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 445 175 M 535 175 L 535 225 L 445 225 L CP
+      2 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      205 195 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (MIC ADC) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (AIC3105) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 195 175 M 285 175 L 285 225 L 195 225 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      285 200 M
+      320 200 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      535 200 M
+      570 200 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      575 195 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (AF AMP) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (OPA4376) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 570 175 M 660 175 L 660 225 L 570 225 L CP
+      2 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      700 195 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (IQ MOD) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            ( FST3253) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 695 175 M 785 175 L 785 225 L 695 225 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      660 200 M
+      695 200 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      830 200 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (BPF) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 820 175 M 870 175 L 870 225 L 820 225 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      785 200 M
+      820 200 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      715 100 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (LPF) SH
+      GR
+   GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      760 25 M
+      790 25 L
+      775 40 L
+      760 25 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      760 20 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (ANT) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 705 75 M 755 75 L 755 125 L 705 125 L CP
+      2 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      340 95 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (BUF AMP) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (ADA4860-1) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 330 75 M 420 75 L 420 125 L 330 125 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      670 100 M
+      705 100 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      585 95 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (PowerAMP) SH
+      GR
+      0 15 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (RD15HVF1x2) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 580 75 M 670 75 L 670 125 L 580 125 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      545 100 M
+      580 100 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      800 35 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (3.5-28MHz Band) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (10W) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      465 95 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (DRV AMP) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (SGA7489x2) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 455 75 M 545 75 L 545 125 L 455 125 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      420 100 M
+      455 100 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      800 95 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (PWR/SWR) SH
+      GR
+      0 15 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (Breidge) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 795 75 M 885 75 L 885 125 L 795 125 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      755 100 M
+      795 100 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      775 100 M
+      775 25 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      870 200 M
+      895 200 L
+      895 150 L
+      305 150 L
+      305 100 L
+      330 100 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      170 200 M
+      0 25 atan DU cos 10.000 MU 195 exch SU
+      exch sin 10.000 MU 200 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      195 200 10.000 4.000 25 0 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      195 200 10.000 4.000 25 0 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      105 200 M
+      130 200 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% OVAL
+0 SG
+GS
+   GS
+      NP 165 250 5 5 TGEL
+      2 W
+      S
+   GR
+GR
+
+% OVAL
+0 SG
+GS
+   GS
+      NP 140 270 5 5 TGEL
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      160 250 M
+      145 265 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      140 305 M
+      140 275 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      130 250 M
+      60 250 L
+      60 225 L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      170 250 M
+      345 250 L
+      -25 0 atan DU cos 10.000 MU 345 exch SU
+      exch sin 10.000 MU 225 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      345 225 10.000 4.000 0 -25 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      345 225 10.000 4.000 0 -25 TGAT
+   CP F
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      700 265 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (2Phase Shiter) SH
+      GR
+      0 15 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (74LVC74) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 695 250 M 785 250 L 785 300 L 695 300 L CP
+      2 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      450 270 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (DDS OSC) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (Si5351A) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 445 250 M 535 250 L 535 300 L 445 300 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      720 250 M
+      -25 0 atan DU cos 10.000 MU 720 exch SU
+      exch sin 10.000 MU 225 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      720 225 10.000 4.000 0 -25 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      720 225 10.000 4.000 0 -25 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      760 250 M
+      -25 0 atan DU cos 10.000 MU 760 exch SU
+      exch sin 10.000 MU 225 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      760 225 10.000 4.000 0 -25 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      760 225 10.000 4.000 0 -25 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      535 270 M
+      0 160 atan DU cos 10.000 MU 695 exch SU
+      exch sin 10.000 MU 270 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      695 270 10.000 4.000 160 0 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      695 270 10.000 4.000 160 0 TGAT
+   CP F
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      575 395 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (Power) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (Limiter) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 570 375 M 660 375 L 660 425 L 570 425 L CP
+      2 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      450 395 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (Freqency) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (Limiter) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 445 375 M 535 375 L 535 425 L 445 425 L CP
+      2 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      325 395 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (FSK/PSK) SH
+      GR
+      0 17 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (OSC) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 320 375 M 410 375 L 410 425 L 320 425 L CP
+      2 W
+      S
+   GR
+GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 305 360 M 675 360 L 675 445 L 305 445 L CP
+      [2 2] 0 SD
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      515 440 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (PIC18F87K22) SH
+      GR
+   GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      365 375 M
+      -150 0 atan DU cos 10.000 MU 365 exch SU
+      exch sin 10.000 MU 225 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      365 225 10.000 4.000 0 -150 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      365 225 10.000 4.000 0 -150 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      885 100 M
+      910 100 L
+      910 400 L
+      0 -250 atan DU cos 10.000 MU 660 exch SU
+      exch sin 10.000 MU 400 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      660 400 10.000 4.000 -250 0 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      660 400 10.000 4.000 -250 0 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      610 375 M
+      610 340 L
+      385 340 L
+      -115 0 atan DU cos 10.000 MU 385 exch SU
+      exch sin 10.000 MU 225 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      385 225 10.000 4.000 0 -115 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      385 225 10.000 4.000 0 -115 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      485 375 M
+      -75 0 atan DU cos 10.000 MU 485 exch SU
+      exch sin 10.000 MU 300 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      485 300 10.000 4.000 0 -75 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      485 300 10.000 4.000 0 -75 TGAT
+   CP F
+GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 455 465 M 515 465 L 515 500 L 455 500 L CP
+      2 W
+      S
+   GR
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      610 465 M
+      -40 0 atan DU cos 10.000 MU 610 exch SU
+      exch sin 10.000 MU 425 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      610 425 10.000 4.000 0 -40 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      610 425 10.000 4.000 0 -40 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      485 465 M
+      -40 0 atan DU cos 10.000 MU 485 exch SU
+      exch sin 10.000 MU 425 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      485 425 10.000 4.000 0 -40 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      485 425 10.000 4.000 0 -40 TGAT
+   CP F
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      465 480 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (Rotary) SH
+      GR
+      0 15 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (Encoder) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 580 465 M 640 465 L 640 500 L 580 500 L CP
+      2 W
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      590 480 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (Rotary) SH
+      GR
+      0 15 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (Encoder) SH
+      GR
+   GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      365 525 M
+      -100 0 atan DU cos 10.000 MU 365 exch SU
+      exch sin 10.000 MU 425 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      365 425 10.000 4.000 0 -100 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      365 425 10.000 4.000 0 -100 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      485 525 M
+      -25 0 atan DU cos 10.000 MU 485 exch SU
+      exch sin 10.000 MU 500 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      485 500 10.000 4.000 0 -25 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      485 500 10.000 4.000 0 -25 TGAT
+   CP F
+GR
+
+% POLY/OPEN-SPLINE
+0 SG
+GS
+   NP
+      610 525 M
+      -25 0 atan DU cos 10.000 MU 610 exch SU
+      exch sin 10.000 MU 500 exch SU L
+   TGSM
+   2 W
+   S
+   1 W
+GR
+GS
+   TGSM
+   NP
+      610 500 10.000 4.000 0 -25 TGAT
+   1 SG CP F
+   0 SG
+   NP
+      610 500 10.000 4.000 0 -25 TGAT
+   CP F
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      375 490 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (FSK) SH
+      GR
+      0 15 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (PSK) SH
+      GR
+      0 15 RM
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (Input) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      490 520 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (VFO Daial) SH
+      GR
+   GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      620 520 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [12 0 0 -12 0 0] MS
+            (Power Setting Dial) SH
+      GR
+   GR
+
+% BOX
+0 SG
+GS
+   10 SM
+   GS
+      NP 180 65 M 935 65 L 935 540 L 180 540 L CP
+      [2 2] 0 SD
+      S
+   GR
+GR
+
+% TEXT
+NP
+0 SG
+   GS
+      1 W
+      785 475 M
+      GS
+            0 SG
+            /NewCenturySchlbk-Roman FF [14 0 0 -14 0 0] MS
+            (KX2) SH
+      GR
+   GR
+
+% XPM
+GS
+   30 150 TR 1.000 1.000 SC 0 RO
+   60 21 8
+   [1 0 0 1 0 0]
+   {currentfile
+    tgifbwpicstr readhexstring pop}
+   false 3 colorimage
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000000000000000000000ffffffffffff000000ffffff
+   ffffffffffff000000ffffffffffffffffffffffff000000000000000000000000000000
+   000000000000000000000000ffffffffffffffffffffffff000000ffffffffffff000000
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff000000000000
+   000000000000000000000000000000000000000000000000000000ffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffffffffff000000ffffffffffff000000ffffff
+   ffffffffffff000000ffffffffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffff000000ffffff000000
+   000000000000000000000000000000000000000000000000ffffffffffff000000ffffff
+   ffffff000000ffffffffffffffffff000000ffffffffffff000000ffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffff000000ffffffffffff000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffff000000000000000000000000000000
+   000000000000000000000000ffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff000000000000
+   000000000000000000000000000000000000000000000000000000ffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffff000000ffffffffffff000000000000000000
+   000000000000000000000000ffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffff000000000000000000000000ffffffffffffffffffffffff000000000000000000
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000000000ffffffffffff000000000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffff000000000000000000000000000000
+   000000ffffffffffffffffffffffffffffffffffff000000000000ffffffffffff000000
+   ffffff000000000000000000000000000000000000ffffffffffff000000000000000000
+   000000000000000000000000000000000000000000000000000000000000ffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffff000000ffffff000000000000ffffff000000
+   ffffffffffff000000ffffffffffffffffffffffff000000ffffff000000000000000000
+   000000000000000000000000ffffffffffffffffffffffffffffffffffffffffff000000
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000000000000000000000000000000000ffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffffffffff000000ffffff000000ffffffffffff
+   000000ffffff000000ffffffffffffffffffffffff000000ffffff000000ffffffffffff
+   000000ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffff000000ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffffffffff000000ffffff000000ffffffffffff
+   000000ffffff000000ffffffffffffffffffffffff000000ffffff000000000000000000
+   000000000000000000000000ffffffffffffffffff000000000000000000000000000000
+   000000000000000000000000000000000000000000000000ffffffffffff000000ffffff
+   ffffff000000000000000000000000000000000000ffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffffffffff000000ffffff000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffff000000000000000000000000000000
+   000000000000000000000000000000ffffffffffffffffffffffffffffffffffff000000
+   ffffffffffff000000ffffffffffff000000ffffffffffffffffffffffff000000ffffff
+   ffffff000000000000000000000000000000000000ffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffffffffff000000ffffff000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffff000000000000ffffffffffffffffff
+   000000ffffff000000ffffff000000ffffffffffffffffffffffff000000000000000000
+   ffffffffffff000000ffffffffffff000000ffffffffffffffffffffffff000000ffffff
+   ffffff000000ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000000000000000ffffffffffff000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffff000000ffffff000000000000000000000000
+   000000000000000000000000000000ffffffffffff000000000000ffffffffffff000000
+   ffffffffffffffffff000000000000ffffffffffffffffffffffffffffff000000ffffff
+   ffffff000000000000000000000000000000000000ffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffff000000ffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff000000
+   000000000000ffffffffffff000000000000ffffffffffffffffffffffff000000000000
+   000000000000000000000000000000000000000000000000000000000000ffffffffffff
+   
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffff000000ffffffffffff
+   ffffff000000000000ffffffffffff000000ffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffff000000000000ffffffffffffffffffffffff000000000000ffffff
+   ffffffffffffffffffffffffffffffffffff000000000000ffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   
+GR
+
+% XPM
+GS
+   19 177 TR 1.000 1.000 SC 0 RO
+   83 44 8
+   [1 0 0 1 0 0]
+   {currentfile
+    tgifbwpicstr readhexstring pop}
+   false 3 colorimage
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffff000000ffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffff000000000000000000000000000000ffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffff000000ffffffffffffffffff000000ffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffff000000000000000000
+   000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffff000000ffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff000000000000
+   000000000000000000ffffffffffffffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffff000000ffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffff000000000000000000000000000000000000ffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffff000000ffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffff000000ffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffff000000ffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffff000000ffffff000000ffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffff000000000000ffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffff000000ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffff000000ffffffffffffffffffffffffffffff   ffffffffffff000000ffffffffffffffffffffffff000000000000000000000000000000
+   ffffffffffffffffffffffffffffff000000000000ffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffff000000ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffff000000000000000000000000000000ffffff   ffffffffffffffffff000000000000000000000000ffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffff000000000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffff000000ffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffff000000ffffffffffffffffff000000ffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000000000000000ffffffffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffffffffffffffff000000000000000000000000000000ffffffffffffffffff
+   ffffffffffffffffff000000ffffff000000ffffffffffff000000ffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffff000000000000000000000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000
+   000000ffffffffffff000000ffffffffffffffffffffffffffffffffffff000000000000
+   000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffff000000000000ffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000ffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffff000000ffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffff000000000000000000000000000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffff000000000000000000000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffff000000ffffffffffffffffffffffffffffff   ffffffffffffffffff000000000000000000ffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffff000000ffffffffffff000000000000ffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000
+   000000ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffff000000000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000
+   000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffff000000000000ffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffff000000ffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffff000000000000000000000000ffffff000000000000000000
+   000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffff000000ffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffff000000000000000000000000000000000000000000000000000000000000000000
+   000000000000ffffffffffffffffffffffffffffffffffffffffff000000ffffff000000
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffff000000ffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffff000000ffffffffffff000000ffffffffffff
+   ffffffffffffffffff000000000000000000000000000000000000000000ffffff000000
+   ffffffffffff000000ffffffffffff000000000000000000000000000000000000000000
+   000000000000000000000000000000000000ffffff000000000000000000000000000000
+   000000000000000000000000000000000000000000000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffff000000ffffffffffff000000ffffffffffff000000ffffff000000
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000
+   000000000000000000ffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffff000000ffffffffffff000000ffffffffffff000000ffffffffffff
+   000000ffffffffffffffffff000000000000000000000000ffffff000000ffffff000000
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffff000000ffffffffffff000000ffffffffffff000000000000ffffffffffff
+   ffffff000000ffffffffffffffffffffffffffffffffffffffffff000000000000000000
+   000000000000000000ffffffffffffffffffffffffffffffffffffffffff000000000000
+   000000000000000000000000ffffffffffffffffffffffff000000000000000000000000
+   000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffff000000ffffffffffff000000ffffff000000ffffffffffffffffffffffffffffff
+   ffffff000000ffffffffffff000000000000000000000000ffffff000000ffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffff000000000000000000000000000000ffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000
+   000000ffffff000000ffffffffffffffffffffffffffffffffffffffffff000000ffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffff000000ffffffffffffffffff000000ffffffffffff
+   ffffffffffffffffffffffff000000000000000000000000ffffff000000000000ffffff
+   000000ffffff000000ffffffffffffffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffff000000000000ffffff000000ffffff000000ffffffffffffffffff
+   ffffffffffffffffffffffff000000ffffffffffff000000ffffff000000000000ffffff
+   000000ffffff000000ffffffffffffffffffffffffffffffffffff000000ffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff000000
+   ffffffffffffffffffffffffffffff000000ffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffff000000000000ffffffffffffffffff
+   ffffffffffffffffffffffff000000ffffffffffff000000000000ffffff000000000000
+   000000ffffff000000ffffffffffffffffffffffffffffff000000ffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff000000
+   000000000000000000ffffffffffff000000ffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffff000000000000ffffffffffff000000000000ffffff
+   ffffffffffffffffffffffff000000000000000000000000000000ffffffffffffffffff
+   ffffffffffff000000ffffffffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffff000000ffffffffffffffffff000000000000000000000000ffffff
+   ffffffffffffffffffffffffffffffffffff000000000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffff000000000000000000000000ffffffffffffffffffffffffffffffffffff000000
+   000000000000ffffffffffff000000ffffffffffff000000ffffffffffffffffffffffff
+   ffffff000000000000ffffffffffffffffff000000ffffffffffffffffffffffffffffff
+   000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+   ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffGR
+
+GR
+tgifsavedpage restore
+end
+showpage
+
+%%Trailer
+%MatchingCreationDate: Fri Nov  4 16:58:51 2016
+%%DocumentFonts: NewCenturySchlbk-Roman
+%%+ Times-Roman
+%%+ Courier
+%%EOF
