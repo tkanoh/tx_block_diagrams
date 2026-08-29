@@ -1,7 +1,7 @@
 # 送信機系統図 ライブラリ
 
 &star; 印のついている系統図は[新スプリアス規格](https://www.tele.soumu.go.jp/j/sys/others/spurious/)の制定に伴い
-[JARD](https://www.jard.or.jp/)の[スプリアス確認保証](https://www.jard.or.jp/warranty/spurious/index.html)を受け総合通信局へ届出たもの.  
+[JARD](https://www.jard.or.jp/)の[スプリアス確認保証](https://www.jard.or.jp/warranty/spurious/index.html)を受け総合通信局へ届出たものです.  
 &star; 印の付いていない系統図は新スプリアス規格の制定に伴い廃止したもの、もしくは未申請のものです.
 
 ## アイテック電子研究所
@@ -9,7 +9,7 @@
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/AITEC/trx501.eps)]
   [[EPS](https://github.com/tkanoh/tx_block_diagrams/blob/main/AITEC/trx501.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/AITEC/trx501.png)]
-## [CQ 出版社](https://www.cqpub.co.jp/) &star;
+## [CQ 出版社](https://www.cqpub.co.jp/)
 - [**あゆ 40 7MHz CW 送信機 キット**](https://www.cqpub.co.jp/hanbai/books/15/15601.htm)&star;
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/CQpub/ayu7.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/CQpub/ayu7.eps)]
@@ -29,7 +29,7 @@
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/Calibration/caltx50b.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/Calibration/caltx50b.png)]
 ## [Elecraft](https://elecraft.com/)
-- [KX-1 CW トランシーバ](https://elecraft.com/pages/kx1-manuals) &star;
+- [KX-1 CW トランシーバ キット](https://elecraft.com/pages/kx1-manuals) &star;
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/Elecraft/kx1.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/Elecraft/kx1.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/Elecraft/kx1.png)]
@@ -128,27 +128,27 @@
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm30.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm30.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm30.png)]
-- **Rock-Mite-40 7.015MHz CW トランシーバ キット **
+- **Rock-Mite-40 7.015MHz CW トランシーバ キット**
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm40-15.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm40-15.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm40-15.png)]
-- **Rock-Mite-40 7.030MHz CW トランシーバ キット ** &star; 
+- **Rock-Mite-40 7.030MHz CW トランシーバ キット** &star; 
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm40-30.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm40-30.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/rm40-30.png)]
-- **SW20 14MHz CW トランシーバ キット ** &star; 
+- **SW20 14MHz CW トランシーバ キット** &star; 
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw20.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw20.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw20.png)]
-- **SW30 10MHz CW トランシーバ キット **
+- **SW30 10MHz CW トランシーバ キット**
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw30.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw30.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw30.png)]
-- **SW40 7MHz CW トランシーバ キット **
+- **SW40 7MHz CW トランシーバ キット**
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw40.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw40.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw40.png)]
-- **SW80 3.5MHz CW トランシーバ キット **
+- **SW80 3.5MHz CW トランシーバ キット**
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw80.obj)]
   [[ESP](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw80.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/SmallWonderLabs/sw80.png)]
