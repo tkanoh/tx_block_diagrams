@@ -167,7 +167,7 @@
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/Others/as15.obj)]
   [[EPS](https://github.com/tkanoh/tx_block_diagrams/blob/main/Others/as15.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/Others/as15.png)]
-- [自作 RS501(改) 50MHz AM 送信機](https://github.com/tomzbj/mirror_of_www_fcz-lab_com/blob/master/CIRQ-019.pdf) &star;
+- [自作 RS501(改) 50MHz AM 送信機](http://www.kanoh.org/radio/legacy/) &star;
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/Others/rs501.obj)]
   [[EPS](https://github.com/tkanoh/tx_block_diagrams/blob/main/Others/rs501.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/Others/rs501.png)]
