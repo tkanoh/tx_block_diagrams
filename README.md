@@ -17,7 +17,7 @@
   [[EPS](https://github.com/tkanoh/tx_block_diagrams/blob/main/CQpub/ayu7.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/CQpub/ayu7.png)]
 ## [CYTEC](https://www.cytec-kit.com/)
-- [**HAYABUSA6 50MHz DBS トランシーバ キット**](https://www.cytec-kit.com/AHW_library/CYTEC_Cir/2012_cir/50MHz%20HAYABUSA6_Cir.BMP)&star;
+- [**HAYABUSA6 50MHz DBS トランシーバ キット**](https://www.cytec-kit.com/AHW_library/CYTEC_Cir/2012_cir/50MHz%20HAYABUSA6_Cir.BMP)
   [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/CYTEC/hayabusa6.obj)]
   [[EPS](https://github.com/tkanoh/tx_block_diagrams/blob/main/CYTEC/hayabusa6.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/CYTEC/hayabusa6.png)]
