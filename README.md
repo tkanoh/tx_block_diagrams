@@ -1,7 +1,7 @@
 # 送信機系統図 ライブラリ
 
 &star; 印のついている系統図は[新スプリアス規格](https://www.tele.soumu.go.jp/j/sys/others/spurious/)の制定に伴い
-[JARD](https://www.jard.or.jp/)の[スプリアス確認保証](https://www.jard.or.jp/warranty/spurious/index.html)を受け総合通信局へ届出たものです.  
+[JARD](https://www.jard.or.jp/)の[基本保証](https://www.jard.or.jp/warranty/kihon/index.html)を受け総合通信局へ届出たものです.  
 &star; 印の付いていない系統図は新スプリアス規格の制定に伴い廃止したもの、もしくは未申請のものです.  
 なお、総合通信局で届出る**第XX送信機系統図**とするためには、
 系統図の構成によっては発振器や搬送波の周波数を示す一覧表等の加筆が必要となる点に注意して下さい.
