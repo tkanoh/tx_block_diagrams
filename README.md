@@ -8,7 +8,7 @@
 
 ## アイテック電子研究所
 - **TRX-501 50MHz AM トランシーバ キット** &star;
-  [[TGIF](https://github.com/tkanoh/tx_block_diagrams/blob/main/AITEC/trx501.eps)]
+  [[TGIF](./AITEC/trx501.eps)]
   [[EPS](https://github.com/tkanoh/tx_block_diagrams/blob/main/AITEC/trx501.eps)]
   [[PNG](https://github.com/tkanoh/tx_block_diagrams/blob/main/AITEC/trx501.png)]
 ## [CQ 出版社](https://www.cqpub.co.jp/)
