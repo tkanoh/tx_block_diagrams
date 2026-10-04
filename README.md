@@ -16,6 +16,10 @@
   [[TGIF](./CQpub/ayu7.obj)]
   [[EPS](./CQpub/ayu7.eps)]
   [[PNG](./CQpub/ayu7.png)]
+- [**短波 CW 送信機の実験**](https://www.cqpub.co.jp/hanbai/books/12/12591.htm)
+  [[TGIF](./CQpub/cqtx7.obj)]
+  [[EPS](./CQpub/cqtx7.eps)]
+  [[PNG](./CQpub/cqtx.png)]
 ## [CYTEC](https://www.cytec-kit.com/)
 - [**HAYABUSA6 50MHz DBS トランシーバ キット**](https://www.cytec-kit.com/AHW_library/CYTEC_Cir/2012_cir/50MHz%20HAYABUSA6_Cir.BMP)
   [[TGIF](./CYTEC/hayabusa6.obj)]
